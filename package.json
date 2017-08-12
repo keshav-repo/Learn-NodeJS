@@ -1,0 +1,22 @@
+{
+  "name": "learn_node",
+  "version": "1.0.0",
+  "description": "Learning nodejs from various source ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debuggar/Learn-NodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/debuggar/Learn-NodeJS/issues"
+  },
+  "homepage": "https://github.com/debuggar/Learn-NodeJS#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
