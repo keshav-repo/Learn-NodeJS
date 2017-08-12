@@ -34,9 +34,9 @@ app.get('/contact',function(req,res){
 });
 
 app.get('/profile/:name',function(req,res){
-	var data={age : 29 , job : 'ninja'};
+	var data={age : 29 , job : 'ninja',hobbies : ['fighting','Eating','Visiting Place'] };
 	//res.send('profile');
-	res.render('profile',{person: req.params.name ,data :data });
+	res.render('profile',{person: req.params.name ,data:data } );
 });
 
 
