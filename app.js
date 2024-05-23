@@ -19,14 +19,15 @@ app.listen(3000);
 */
 
 
-var express=require('express');
+var express=require('express'),
+service = require('./component/service');
 
 var app=express();
 
-app.set('view engine','ejs');
 
 app.get('/',function(req,res){
-	res.sendFile(__dirname+'/index.html');
+	service.fun();
+	res.json('test');
 });
 
 app.get('/contact',function(req,res){
