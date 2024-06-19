@@ -1,5 +1,5 @@
 // Import the Q library
-const Q = require('q');
+const Q = require("q");
 
 // Simulate an asynchronous function that may encounter an error
 function asyncFunction(success) {
@@ -7,9 +7,9 @@ function asyncFunction(success) {
 
   setTimeout(() => {
     if (success) {
-      deferred.resolve('Async operation completed successfully');
+      deferred.resolve("Async operation completed successfully");
     } else {
-      deferred.reject(new Error('Async operation encountered an error'));
+      deferred.reject(new Error("Async operation encountered an error"));
     }
   }, 1000);
 
@@ -19,12 +19,11 @@ function asyncFunction(success) {
 // Using the asyncFunction with promises and handling errors
 asyncFunction(true) // Pass 'false' to simulate an error
   .then((result) => {
-    console.log('Success:', result); // This won't be called in case of an error
+    console.log("Success:", result); // This won't be called in case of an error
   })
   .catch((error) => {
-    console.error('Error:', error.message); // Handle the error here
+    console.error("Error:", error.message); // Handle the error here
   })
   .finally(() => {
-    console.log('Done'); // This will be executed regardless of success or error
+    console.log("Done"); // This will be executed regardless of success or error
   });
-

@@ -1,24 +1,24 @@
 {
-    "configurations": [
-        // {
-        //     "type": "node-terminal",
-        //     "name": "Run Script: test",
-        //     "request": "launch",
-        //     "command": "npm run test",
-        //     "cwd": "${workspaceFolder}"
-        // },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Jest: current file",
-            //"env": { "NODE_ENV": "test" },
-            "program": "${workspaceFolder}/node_modules/.bin/jest",
-            "args": ["${fileBasenameNoExtension}", "--config", "jest.config.js"],
-            "console": "integratedTerminal",
-            "disableOptimisticBPs": true,
-            "windows": {
-              "program": "${workspaceFolder}/node_modules/jest/bin/jest"
-            }
-        }
-    ]
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test script",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/component/mongodbDemo.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest: current file",
+      //"env": { "NODE_ENV": "test" },
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["${fileBasenameNoExtension}", "--config", "jest.config.js"],
+      "console": "integratedTerminal",
+      "disableOptimisticBPs": true,
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+      }
+    }
+  ]
 }
