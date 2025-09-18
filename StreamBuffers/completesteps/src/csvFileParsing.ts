@@ -18,8 +18,6 @@ class BatchTransform extends Transform {
 
     constructor() {
         super({ objectMode: true, highWaterMark: chunkSize });
-
-        // Write headers to the CSV file
         this.writeStream.write("Name,Age,Email\n");
     }
 
