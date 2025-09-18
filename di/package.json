@@ -1,0 +1,22 @@
+{
+  "name": "di",
+  "version": "1.0.0",
+  "description": "1. This is a typescript based poc for dependency injection",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "tsx": "^4.7.0"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "inversify": "^7.10.0",
+    "reflect-metadata": "^0.2.2"
+  }
+}
