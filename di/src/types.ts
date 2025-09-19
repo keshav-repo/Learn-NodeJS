@@ -9,6 +9,7 @@ const TYPES = {
     ProductService: Symbol.for("ProductService"),
     ProductController: Symbol.for("ProductController"),
     ProductRoutes: Symbol.for("ProductRoutes"),
+    AllRoutes: Symbol.for("AllRoutes"),
 };
 
 export default TYPES;

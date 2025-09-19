@@ -8,6 +8,7 @@ import { ProductRepository } from "./repositories/productRepository";
 import { ProductService } from "./services/productService";
 import { ProductController } from "./controllers/productController";
 import { ProductRoutes } from "./routes/ProductRoutes";
+import { AllRoutes } from "./routes";
 
 const container = new Container();
 
@@ -19,6 +20,6 @@ container.bind<ProductRepository>(TYPES.ProductRepository).to(ProductRepository)
 container.bind<ProductService>(TYPES.ProductService).to(ProductService).inSingletonScope();
 container.bind<ProductController>(TYPES.ProductController).to(ProductController).inSingletonScope();
 container.bind<ProductRoutes>(TYPES.ProductRoutes).to(ProductRoutes).inSingletonScope();
-
+container.bind<AllRoutes>(TYPES.AllRoutes).to(AllRoutes).inSingletonScope();
 
 export default container;
