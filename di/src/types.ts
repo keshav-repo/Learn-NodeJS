@@ -4,6 +4,11 @@ const TYPES = {
     UserRepository: Symbol.for("UserRepository"),
     UserService: Symbol.for("UserService"),
     UserController: Symbol.for("UserController"),
+    UserRoutes: Symbol.for("UserRoutes"),
+    ProductRepository: Symbol.for("ProductRepository"),
+    ProductService: Symbol.for("ProductService"),
+    ProductController: Symbol.for("ProductController"),
+    ProductRoutes: Symbol.for("ProductRoutes"),
 };
 
 export default TYPES;
